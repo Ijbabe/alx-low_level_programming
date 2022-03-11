@@ -1,14 +1,12 @@
+#!/bin/bash
 #include <stdio.h>
-
 /**
- * main - print phrase "Programming is like building a multilingual puzzle" 
- * return- 0 if exited properly, otherwise non zero.
- */
+ * main - entry point print phrase
+ * Return : 0 if success otherwise nonzero
+ */ 
 
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
-
-
-	return (0);
+	Return (0);
 }

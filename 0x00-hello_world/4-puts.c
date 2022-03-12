@@ -1,12 +1,12 @@
-#!/bin/bash
 #include <stdio.h>
 /**
- * main - entry point print phrase
- * Return : 0 if success otherwise nonzero
- */ 
+ * main - Print test
+ * Description: using main function print puts
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
-	Return (0);
+	return (0);
 }

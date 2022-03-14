@@ -19,15 +19,15 @@ int main(void)
 
 	if (n % 10 > 5)
 	{
-	printf("%d and is greater than 5\n", n);
+	printf("and is greater than 5\n");
 	}
 	else if (n % 10 == 0)
 	{
-	printf("%d and is zero\n", n);
+	printf("and is zero\n");
 	}
 	else if (n % 10 < 6 && n % 10 != 0)
 	{
-	printf("%d and is less than 6 and not equal to 0\n", n);
+	printf("and is less than 6 and not equal to 0\n");
 	}
 	return (0);
 }

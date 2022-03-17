@@ -1,13 +1,8 @@
 #include <stdio.h>
 
 /**
-<<<<<<< HEAD
- * main- causes an infinte loop
+ * main - causes an infinite loop
  * Return: 0
-=======
- * main - causes an infinte loop
- * Return- 0
->>>>>>> a3c72ea9733d1472d8ec4295d9fa38909951e9a8
  */
 
 int main(void)

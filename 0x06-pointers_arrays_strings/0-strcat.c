@@ -19,7 +19,9 @@ char *_strcat(char *dest, char *src)
 	{
 		a++;
 	}
-	while (*(dest + a) = *(src + b);
+	while (*(dest + a) = *(src +  b))
+	{
+	if (*(src + b) == '\0')
 		a++;
 		b++;
 	}

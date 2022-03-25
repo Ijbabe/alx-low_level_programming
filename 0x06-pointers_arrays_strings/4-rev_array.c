@@ -12,13 +12,15 @@
 
 void reverse_array(int *a, int n)
 {
-	int b = 0, h;
+	int a, b, t;
 
-	n = n - 1;
-	for (b = 0; b < n; b++)
-		h = *(a + b);
-		*(a + b) = *(a + n);
-		*(a + n) = h;
-		a++;
-		n--;
+	for (a = 0; a < n - 1; a++)
+	{
+		for (b = a + 1; b > 0, b--)
+		{
+			t = *(a + b);
+			*(a + b) = *(a + (b - 1));
+			*(a + (b - 1)) = t;
+		}
+	}
 }

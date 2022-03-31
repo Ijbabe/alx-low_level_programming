@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * cap_string- capitalize words in a string
@@ -14,11 +15,11 @@ char *cap_string(char *s)
 
 	if (*(s + a) >= 97 && *(s + a) <= 122)
 		*(s + a) = *(s + a) - 32;
-	a++;
+			a++;
 	while (*(s + a) != '\0')
 	{
 		for (i = 0; i < 13; i++)
-			while (*(s + a) = sep[i])
+			if (*(s + a) == sep[i])
 			{
 				if (*(s + (a + 1)) >= 97 && *(s + (a + 1)) <= 122)
 					*(s + (a + 1)) = *(s + (a + 1)) - 32;

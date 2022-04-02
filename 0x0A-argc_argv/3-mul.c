@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
  * main- multiplies two numbers,prints result
  * followed by new line

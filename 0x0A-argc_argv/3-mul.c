@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
  * main- multiplies two numbers,prints result
  * followed by new line
@@ -22,7 +23,7 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		printf("%d\n", argv[1] * argv[2]);
+		printf("%d", atoi(argv[1]) * atoi(argv[2]))"
 		}
 		return (0);
 }

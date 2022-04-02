@@ -12,19 +12,17 @@
 
 int main(int argc, char *argv[])
 {
-	int i, res = 1;
+	int i;
 
-	for (i = 1; i < argc; i++)
-		res = res * atoi(argv[i]);
+	for (i = 0; i < argc; i++)
 	{
 		if (agrc != 3)
 			printf("Error\n");
 	return (1);
 	}
-
-		else
-		{
-			printf("%d\n", res);
+	else
+	{
+		printf("%d\n", argv[1] * argv[2]);
 		}
 		return (0);
 }

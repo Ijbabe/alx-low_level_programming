@@ -21,16 +21,22 @@ void times_table(void)
 			unit = ((num % 10) + '0');
 
 			if (col == 0)
+			{
 				_putchar('0');
+			}
 			else if (num < 10)
+			{
 				_putchar(',');
 				_putchar(' ');
 				_putchar(unit + '0');
+			}
 			else
+			{
 				_putchar(',');
 				_putchar(' ');
 				_putchar(ten + '0');
 				_putchar(unit + '0');
+			}
 		}
 		_putchar('\n');
 	}

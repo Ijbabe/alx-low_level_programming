@@ -8,7 +8,7 @@
  * Return: 0
  */
 
-char *cp(char *s)
+char *_cp(char *s)
 {
 	char *pr; /* destination */
 	int i, j;
@@ -29,7 +29,7 @@ char *cp(char *s)
 	{
 		pr[j] = s[j];
 	}
-	pr(i - 1) = '\0';
+	pr[i] = '\0';
 	return (pr);
 }
 
@@ -46,7 +46,7 @@ char *cp(char *s)
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *bingo;
-	char *n_name, n_owner;
+	char *n_name, *n_owner;
 
 	if (name == NULL || owner == NULL)
 	{
@@ -57,7 +57,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		return (NULL);
 	}
-	n_name = cp(name);
+	n_name = _cp(name);
 	if (n_name == NULL)
 	{
 		free(bingo);
@@ -65,7 +65,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 	bingo->name = n_name;
 	bingo->age = age;
-	n_owner = cp(owner);
+	n_owner = _cp(owner);
 	if (n_owner == NULL)
 	{
 		free(bingo->name);

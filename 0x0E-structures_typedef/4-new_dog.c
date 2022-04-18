@@ -2,7 +2,7 @@
 #include "dog.h"
 
 /**
- * cp- copies argument
+ * _cp- copies argument
  * @s: source
  *
  * Return: 0

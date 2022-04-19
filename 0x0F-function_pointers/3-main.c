@@ -17,7 +17,7 @@
 int main(int argc, char *argv[])
 {
 	int num1, num2, result;
-	int (*optr)(int int);
+	int (*optr)(int, int);
 	char *geto;
 
 	if (argc != 4)

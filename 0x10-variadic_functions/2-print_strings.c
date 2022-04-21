@@ -13,15 +13,15 @@
 
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	va_list str;
-	int i = 0;
+	va_list pr;
+	unsigned int i = 0;
 	char *done;
 
-	va_start(str, n);
+	va_start(pr, n);
 	for (i = 0; i < n; i++)
 	{
-		done = va_arg(str, char *);
-	if (str)
+		done = va_arg(pr, char *);
+	if (pr)
 		printf("%s", done);
 	else
 		printf("nil");
@@ -29,5 +29,5 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		printf("%s", separator);
 	}
 	printf("\n");
-	va_end(str);
+	va_end(pr);
 }

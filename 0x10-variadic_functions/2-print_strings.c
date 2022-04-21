@@ -26,9 +26,9 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	else
 		printf("nil");
 	if (separator == NULL)
-		return;
+		printf("%s", pr);
 	if (i != (n - 1))
-		printf("%s", separator);
+		printf("%s%s", pr, separator);
 	}
 	printf("\n");
 	va_end(pr);

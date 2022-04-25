@@ -9,17 +9,30 @@
 
 int main(void)
 {
-	int a;
+	int a, b;
 
-	for (a = 0; a < 100; a++)
+	a = 48;
+	e = 48;
+
+	while (b < 58)
 	{
-		putchar((a / 10) + '0');
-		putchar((a % 10) + '0');
-		if (a != 99)
+		a = 48;
+		while (a < 58)
 		{
-			putchar(',');
-			putchar(' ');
+			if (b != a && b < a)
+			{
+				putchar(b);
+				putchar(a);
+				if (a == 57 && b == 56)
+				{
+					break;
+				}
+				putchar(',');
+				putchar(' ');
+			}
+			a++;
 		}
+		b++;
 	}
 	putchar('\n');
 	return (0);

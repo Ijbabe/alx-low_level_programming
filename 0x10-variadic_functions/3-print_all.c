@@ -21,7 +21,7 @@ void print_all(const char * const format, ...)
 		{
 			if (format[a] == sarg[b] && c)
 			{
-				printf(",");
+				printf(", ");
 				break;
 			} b++;
 		}
@@ -45,8 +45,7 @@ void print_all(const char * const format, ...)
 			}
 			printf("%s", pr);
 			break;
-		} a++;
-		printf("\n");
-		va_end(entry);
+		}a++;
 	}
+	printf("\n"), va_end(entry);
 }

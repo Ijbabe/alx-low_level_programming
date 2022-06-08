@@ -17,8 +17,8 @@ void times_table(void)
 		for (col = 0; col <= 9; col++)
 		{
 			num = row * col;
-			ten = ((num / 10) + '0');
-			unit = ((num % 10) + '0');
+			ten = ((num / 10) + 0);
+			unit = ((num % 10) + 0);
 
 			if (col == 0)
 			{
@@ -28,14 +28,14 @@ void times_table(void)
 			{
 				_putchar(',');
 				_putchar(' ');
-				_putchar(unit + '0');
+				_putchar(unit + 0);
 			}
 			else
 			{
 				_putchar(',');
 				_putchar(' ');
-				_putchar(ten + '0');
-				_putchar(unit + '0');
+				_putchar(ten + 0);
+				_putchar(unit + 0);
 			}
 		}
 		_putchar('\n');

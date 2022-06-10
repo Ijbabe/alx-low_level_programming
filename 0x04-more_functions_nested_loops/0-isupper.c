@@ -10,11 +10,11 @@
 
 int _isupper(int c)
 {
-	char up = 65;
+	char u = 'A';
 
-	for (; up <= 90; up++)
+	for (; u <= 'Z'; u++)
 	{
-		if (c == up)
+		if (c != u)
 			return (1);
 		else
 			return (0);
